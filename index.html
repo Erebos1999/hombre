@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIERRA SOL</title>
+    <!-- estilo boots; estilos; icono; js boots /-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!--iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <a class="navbar-brand" href="#">
+                    <img class="rounded-circle" src="imagenes/icono.jpg" width="50" alt="logo">
+                </a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <a class="nav-link" href="#Ejercicio3">Ejercicio 3 </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Ejercicio6">Ejercicio 6</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contacto">Contactame</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <H1>Resumen y Ejecicios del Libro</H1>
+        <img class="imgperfil" src="imagenes/perfil.jpeg" class="img-fluid" alt="perfil">
+        <h2>"El Hombre que Calculaba"</h2>
+    </header>
+    <section>
+        <h1>Capitulo XV</h1>
+        <h2 class="titulo" id="Ejercicio3">Resumen del Capitulo</h2>
+        <p>En un aposento abandonado Beremis y su amigo encontraron un extraño cuadro colgado que tenia garbatos inscritos en el, De inmediato Beremiz se dio cuenta que se trataba de de un cuadrado magico y procedio a explicar a su amigo de que se trataba.
+            Un cuadrada magico es aquel que sumando sus filas, columnas y diagonales dan el mismo numero, mucha gente tiene la creencia que estos cuadrados dan suerte o tambien hay otros que son considerados diabolicos.</p>
+        <img src="imagenes/magico.png" class="img-fluid" alt="perfil"><br>
+
+        <h2 class="titulo">Ejemplo Practico</h2>
+        <p> Acontinuacion tenemos un script que reconoce si tu cuadrado es magico sumando filas columnas y diagonales.</p>
+        <h2>Ingrese el numero de filas o columnas de su cuadrado</h2>
+        <input type="number" id="filas">
+        <button onclick="generar()">Generar</button>
+        <div id="demo" class="w-100"></div>
+        <button onclick="reconocer()">Reconocer</button>
+        <div id="demo2"></div>
+    </section>
+
+    <section>
+        <h1>Capitulo XIX</h1>
+        <h2 class="titulo" id="Ejercicio6">Resumen del Capitulo</h2>
+        <p class="w-75">En una charla entre el Cluzir-Schá y el calculador Beremis surge la historia de los 3 principes en la cual hay un problema que tenia atribulados a muchos algebristas: Hubo una vez un barco navio que alcanzado por un violento temporal y fue salvado
+            por 3 marineros y como recompensa se les dio un cofre con cierto numero de monedas mas de 200 y menos de 300 que debian ser divididos en 3 partes iguales para los 3 marineros. Durante la noche uno de los marineros queriendo asegurarse fuea
+            sacar la parte que le correpondia pero al contar las monedas vio que no era divisible entre 3 ya que sobraba 1 moneda, el para no causar disputas la lanzo al mar y tomo su parte y guardo el resto, mas tarde el 2do marinero pense lo mismo que
+            el primero y quizo asegurar su parte pero al dividir las monedas del cofre vio que la division entre los 3 no era exacta por 1 moneda, agarro la moneda restante y la lanzo al mar, tomo su parte y guardo el resto. Horas despues el 3er marinero
+            tuvo la misma idea y nuevamente tuvo el mismo problema y lo resolvio de igual manera que sus compañeros tomo su parte y guardo el resto. Al dia siguiente el almojarife quizo repartir el cofre y tuvo nuevamente el mismo problema la cantidad
+            no era divisible entre 3 al sobrar una moneda se lo quedo como pago yfue a entregar el resto entre los 3 marineros. ¿cuántas eran las monedas? ¿Cuánto recibió cada marinero?</p>
+        <p>Sabemos que:</p>
+        <ul>
+            <li>Las monedas estan entre 200 y 300 </li>
+            <li> Cada marinero se llevo 1/3 y tiro 1</li>
+            <li> El almojarife dividio el restante entre los 3 y se quedo con 1</li>
+        </ul>
+        <p>por tanto se realizaron 4 divisiones del botin</p>
+        <p>Con un Script averiguamos cual es el numero de monedas inicial</p>
+        <button onclick="monedas()">calcular</button><br>
+        <div id="numbers"></div><br>
+        <p>Sabiendo el botin inicial podemos efectuar las divisiones: </p>
+        <img src="imagenes/divisiones.jpg" class="img-fluid" alt="perfil"><br>
+        <button onclick="division()">calcular cuanto le toco a cada marinero</button><br>
+        <div id="numbers2"></div><br>
+    </section>
+    <script src="cap.js">
+    </script>
+
+
+
+
+    <footer class="d-flex flex-column align-items-center justify-content-center">
+        <h2 class="titulo" id="Contacto">Contactos</h2>
+
+        <div class="row">
+            <div class="col-3 redes d-flex flex-wrap align-items-center justify-content-center">
+                <a href="https://es-la.facebook.com/jrmc99" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a></div>
+            <div class="col-3 redes d-flex flex-wrap align-items-center justify-content-center">
+                <a href="https://www.instagram.com/jrmc_99" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a></div>
+
+            <div class="col-3 redes d-flex flex-wrap align-items-center justify-content-center">
+                <a href="https://wa.me/59168028878" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a></div>
+            <div class="col-3 redes d-flex flex-wrap align-items-center justify-content-center">
+                <a href="mailto:rodrigomarcac@gmail.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-envelope"></i></a></div>
+
+        </div>
+
+
+        <p class="textofooter"> Autor: Joel Rodrigo Marca Cordova</p>
+    </footer>
+
+</body>
+
+
+</html>
